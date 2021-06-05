@@ -8,11 +8,11 @@ Singularity recipe for [bat](https://github.com/sharkdp/bat).
 Copy the
 
 * `SIF` file
-* and the `bat ` script
+* and the `bat` script
 
 to `/opt/packages/bat/0.17.1`.
 
-Copy the file `modulefile.lua` to `/opt/modules/bat ` as ` 0.17.1`.
+Copy the file `modulefile.lua` to `/opt/modules/bat` as `0.17.1`.
 
 ## Building the image using the recipe
 
