@@ -12,7 +12,7 @@ Copy the
 
 to `/opt/packages/bat/0.17.1`.
 
-Copy the file `modulefile.lua` to `/opt/modulefiles/bat` as `0.17.1`.
+Copy the file `modulefile.lua` to `/opt/modulefiles/bat` as `0.17.1.lua`.
 
 ## Building the image using the recipe
 
