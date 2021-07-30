@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v1
       
     - name: Install tree
-      run: apt install tree
+      run: apk --no-cache tree
 
     - name: Build and test container
       run: |
