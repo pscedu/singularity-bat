@@ -11,13 +11,7 @@ whatis("Version: 0.17.1")
 whatis("Category: Other")
 whatis("Description: bat is a cat clone with wings.")
 
-
-Topics
-git syntax-highlighting.")
-
 help([[
-bat 0.17.1
----------
 bat is a cat clone with wings.
   
 To load the module, type
