@@ -16,8 +16,8 @@ jobs:
     - name: Check out code for the container build
       uses: actions/checkout@v1
       
-    - name: Install xmllint
-      run: sudo apt-get install tree
+    - name: Install tree
+      run: apt install tree
 
     - name: Build and test container
       run: |
