@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v1
       
     - name: Install useful utilities
-      run: apk update && apk add --no-cache tree cowsay
+      run: apk update && apk add --no-cache tree figlet
 
     - name: Build and test container
       run: |
