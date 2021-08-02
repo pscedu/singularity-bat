@@ -24,19 +24,20 @@ jobs:
        for DIRECTORY in *
        do
          if [ -d $DIRECTORY ]; then
-            cd $DIRECTORY
+            if [[ $DIRECTORY ~= 'images' ]]; then
+                cd $DIRECTORY
 
-            if [ ! -f .ignore ]; then
-             echo "Building container"
-             bash ./build.sh
+                if [ ! -f .ignore ]; then
+                    echo "Building container"
+                    bash ./build.sh
 
-             if [ -f ./test.sh ]; then
-              echo "Running tests"
-              bash ./test.sh
-             else
-              echo "Test file not found. Skipping tests."
-             fi
-            fi
-           cd ..
+                    if [ -f ./test.sh ]; then
+                        echo "Running tests"
+                        bash ./test.sh
+                    else
+                        echo "Test file not found. Skipping tests."
+                    fi
+                fi
+            cd ..
+           fi
          fi
-       done
