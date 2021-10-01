@@ -5,11 +5,7 @@ PACKAGE=bat
 TOOL=bat
 DIRECTORY=$(dirname $0)
 
-if [ $HOSTNAME == 'workshop.bil.psc.edu' ]; then
-        STORAGES=(/ocean /hive /local)
-else
-    	STORAGES=(/ocean /bil /hive /local)
-fi
+STORAGES=(/ocean /bil /hive /local)
 
 OPTIONS=""
 for STORAGE in "${STORAGES[@]}"
